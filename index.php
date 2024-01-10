@@ -1,19 +1,10 @@
-    <?php
-        if (isset($_GET["email"])) {
-            $email = $_GET["email"];
-            if (str_contains($email, '@') && str_contains($email, '.')) {
-                //Email valida
-                echo '<div class="alert alert-success" role="alert">
-                        Bravo, la tua e-mail è valida
-                      </div>';
-            } else {
-                //Email non valida
-                echo '<div class="alert alert-danger" role="alert">
-                        Mi dispiace, la tua e-mail non è valida
-                      </div>';
-            }
-        }
-    ?>
+<?php
+include 'functions.php';
+if (isset($_GET["email"])) {
+    $email = $_GET["email"];
+    echo emailValida($email);
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +16,7 @@
 </head>
 <body>
   <div class="container text-center">
-    <h2>Iscrizione Newsletterprova</h2>
+    <h2>Iscrizione Newsletter</h2>
     <!-- form -->
     <form action="index.php" method="get">
       <div class="mb-3">
@@ -39,5 +30,8 @@
   </div>
 </body>
 </html>
+
+
+
 
 
