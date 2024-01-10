@@ -9,7 +9,7 @@
             } else {
                 //Email non valida
                 echo '<div class="alert alert-danger" role="alert">
-                        Mi dispiace,, la tua e-mail non è valida
+                        Mi dispiace, la tua e-mail non è valida
                       </div>';
             }
         }
