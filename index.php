@@ -25,7 +25,7 @@
 </head>
 <body>
   <div class="container text-center">
-    <h2>Iscrizione Newsletter</h2>
+    <h2>Iscrizione Newsletterprova</h2>
     <!-- form -->
     <form action="index.php" method="get">
       <div class="mb-3">
